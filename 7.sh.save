@@ -1,0 +1,29 @@
+temp=0
+temp=0
+while read line
+do
+        temp=$(($temp+1))
+        if ((temp==2))
+        then
+                a=$line
+        elif ((temp==3))
+        then
+                b=$line
+        else
+                echo "nothing $temp"
+        fi
+done < num
+echo "$a,$b"while read line
+do
+	temp=$(($temp+1))
+	if ((temp==2))
+	then
+		a=$line
+	elif ((temp=3))
+	then
+		b=$line
+	else
+		echo "nothing $temp"
+	fi
+done < num
+echo "$a,$b"
